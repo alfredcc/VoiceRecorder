@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VoiceRecorder" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fc-c6-Mpb">
+                                <rect key="frame" x="248" y="248" width="104" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3fc-c6-Mpb" secondAttribute="height" multiplier="1:1" id="yMn-cA-oNy"/>
+                                </constraints>
+                            </view>
+                            <view alpha="0.20000000000000001" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uqo-zp-5hW">
+                                <rect key="frame" x="248" y="248" width="104" height="104"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Uqo-zp-5hW" secondAttribute="height" multiplier="1:1" id="NKA-q7-Uga"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZM6-wC-IkB">
+                                <rect key="frame" x="260" y="260" width="80" height="80"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mic" translatesAutoresizingMaskIntoConstraints="NO" id="CSJ-KL-Lg7">
+                                        <rect key="frame" x="8" y="8" width="64" height="64"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="CSJ-KL-Lg7" firstAttribute="centerY" secondItem="ZM6-wC-IkB" secondAttribute="centerY" id="Lom-Hg-d5J"/>
+                                    <constraint firstAttribute="height" constant="80" id="WTu-gx-M6H"/>
+                                    <constraint firstAttribute="width" secondItem="ZM6-wC-IkB" secondAttribute="height" multiplier="1:1" id="ZK0-Y0-rUq"/>
+                                    <constraint firstItem="CSJ-KL-Lg7" firstAttribute="centerX" secondItem="ZM6-wC-IkB" secondAttribute="centerX" id="vEL-D9-XWS"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12549019607843137" green="0.19215686274509802" blue="0.30196078431372547" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="3fc-c6-Mpb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0xd-d0-JmM"/>
+                            <constraint firstItem="Uqo-zp-5hW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3AW-jC-Lmc"/>
+                            <constraint firstItem="3fc-c6-Mpb" firstAttribute="width" secondItem="Uqo-zp-5hW" secondAttribute="width" id="5X4-zj-cEa"/>
+                            <constraint firstItem="ZM6-wC-IkB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6qh-40-QXy"/>
+                            <constraint firstItem="3fc-c6-Mpb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QfA-6j-imE"/>
+                            <constraint firstItem="Uqo-zp-5hW" firstAttribute="width" secondItem="ZM6-wC-IkB" secondAttribute="width" multiplier="1.3" id="VKw-Eh-1Az"/>
+                            <constraint firstItem="3fc-c6-Mpb" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="WHM-vK-0Vd"/>
+                            <constraint firstItem="3fc-c6-Mpb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dmt-Du-XhW"/>
+                            <constraint firstItem="Uqo-zp-5hW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lzp-1g-gsY"/>
+                            <constraint firstItem="ZM6-wC-IkB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vk9-Z5-3uz"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animatorView" destination="Uqo-zp-5hW" id="8NA-JM-Eo4"/>
+                        <outlet property="imageViewBgLevel0" destination="3fc-c6-Mpb" id="wc1-qy-ucQ"/>
+                        <outlet property="imageViewBgLevel1" destination="ZM6-wC-IkB" id="hBL-Fe-Z72"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="mic" width="64" height="64"/>
+    </resources>
+</document>
